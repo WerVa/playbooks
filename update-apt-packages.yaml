@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: true
+  task:
+    - name: update packages
+      apt:
+        upgrade: yes
+        update_cache: yes
